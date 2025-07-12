@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.*;
 
-public class 17_19_ClientOneWay {
+public class client_bit_stuffing {
     public static String textToBinary(String text) {
         StringBuilder binary = new StringBuilder();
         for (char ch : text.toCharArray()) {

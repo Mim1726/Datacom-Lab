@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.*;
 
- public class 17_19_ServerOneWay {
+ public class server_bit_destuffing {
     public static String bitDeStuff(String data) {
         StringBuilder destuffed = new StringBuilder();
         int count = 0;
@@ -44,10 +44,9 @@ import java.net.*;
         System.out.println("Waiting for the client\n");
         Socket s = ss.accept();
         System.out.println("Client request is accepted at port no: " + s.getPort());
-
         System.out.println("Server’s Communication Port: "+s.getLocalPort());
+
         DataInputStream input = new DataInputStream(s.getInputStream());
-        
         DataOutputStream output = new DataOutputStream(s.getOutputStream());
         BufferedReader serverInput = new BufferedReader(new InputStreamReader(System.in));
         String str = "", reply = "";
