@@ -3,7 +3,7 @@ package CRC;
 import java.io.*;
 import java.net.*;
 
-public class server2 {
+public class server {
     public static void main(String[] args) throws IOException {
         int port = 6009;
         System.out.println("Server is connected at port no: " + port);
